@@ -1,0 +1,17 @@
+
+import java.util.Scanner;
+
+public class ProductsOfDigits {
+  public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter Digits :");
+      int n = sc.nextInt();
+      int x=1;
+      while(n!=0){
+        x=x*(n%10);
+        n/=10;
+        
+      }
+      System.out.println("Sum of Digits are :"+x);
+  }
+}
